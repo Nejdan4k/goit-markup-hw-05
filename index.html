@@ -432,7 +432,7 @@
             <button class="footer-button" type="submit">
                 Subscribe
                 <svg class="footer-send" width="24" height="24">
-                    <use href="./images/iconshw5.svg#icon-send-footer"></use>
+                    <use href="./images/iconshw5.svg#icon-paper"></use>
                 </svg>
             </button>
         </form>
@@ -470,7 +470,22 @@
                 </svg>
             </div>
         </div>
-        
+        <div class="modal-comment">
+            <label class="modal-label" form="user-comment">Comment</label>
+            <textarea class="modal-textarea" name="user-comment" id="user-comment"  placeholder="Text input"></textarea>
+        </div>
+        <div class="modal-checkbox">
+            <input class="input-checkbox visually-hidden" type="checkbox" value="true" name="user-privacy"  id="user-privacy" />
+            <label class="modal-label" form="user-privacy" >
+            <span class="privacy-text-checkbox">
+            <svg class="modal-checkbox-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+        </span>
+        I accept the terms and conditions of the <a href="" class="modal-privacy-link">Privacy Policy</a>
+        </label>
+        </div>
+        <button class="button-send-modal" type="submit" >Send</button>
       </form>
     </div>
   </div>
