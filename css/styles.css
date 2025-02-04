@@ -790,3 +790,10 @@ background-color: #404BBF;
 .button-send-modal:focus {
 background-color: #404BBF;
 }
+.button-send-modal,
+.modal-close-btn {
+  cursor: pointer;
+}
+.modal {
+  padding: 72px 24px 24px 24px;
+}
