@@ -796,13 +796,12 @@ margin: 0 auto;
 }
 
 .input-checkbox:checked + .castom-chekbox {
-  background-color: #404bbf;
+  background-color: var(--header-hover-color, #404bbf);
   border: none;
+  fill: var(--team-social-fill, #F4F4FD);
 }
-.input-checkbox:checked + .castom-chekbox svg {
-  fill: #F4F4FD;
-  
-}
+
+
 
 
 .input-checkbox {
