@@ -650,6 +650,11 @@ height: 40px;
   background-color: #404bbf;
   border: none;
   fill: #ffffff;
+
+}
+.modal-close-btn:hover .footer-button-icon,
+.modal-close-btn:focus .footer-button-icon {
+  fill: #ffffff;
 }
 .modal-box{
   margin-bottom: 8px; 
@@ -738,10 +743,19 @@ color: rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.castom-checkbox{
-  transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+.input-checkbox:checked + .castom-chekbox {
+  background-color: var(--header-hover-color, #404bbf);
+  border: none;}
+  .input-checkbox:checked + .castom-chekbox svg {
+    fill: var(--team-social-fill, #F4F4FD);
+    visibility: visible;
+  }
+
+
 .checkbox:checked + .modal-label + .castom-chekbox{
   background-color: #404bbf;
     border: transparent;
