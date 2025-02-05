@@ -741,7 +741,7 @@ color: rgba(46, 47, 66, 0.4);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  fill: none;}
+  fill: transparent;}
 
   
 
@@ -796,12 +796,12 @@ margin: 0 auto;
 }
 
 .input-checkbox:checked + .castom-chekbox {
-  background-color: var(--header-hover-color);
+  background-color: #404bbf;
   border: none;
 }
 .input-checkbox:checked + .castom-chekbox svg {
-  fill: var(--team-social-fill);
-  visibility: visible;
+  fill: #F4F4FD;
+  
 }
 
 
