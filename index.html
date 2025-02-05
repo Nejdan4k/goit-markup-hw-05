@@ -442,9 +442,9 @@
 
 <!--Modal windows-->
 
-<div class="backdrop" data-modal>
+<div class="backdrop is-open">
     <div class="modal">
-      <button class="modal-close-btn" type="button"  data-modal-close>
+      <button type="button" class="modal-close-btn">
         <svg class="footer-button-icon" width="8" height="8">
             <use href="./images/iconshw5.svg#icon-close"></use>
         </svg>
@@ -454,35 +454,68 @@
       <form class="modal-form">
         <div class="modal-box">
            <label class="modal-label" for="user-name">Name</label> 
-           <div class="input-wrap">
-<input class="modal-input" type="text" name="user-name" minlength="4" id="user-name">
+           <div class="wrapper-icon">
+<input 
+class="modal-input" 
+type="text" 
+name="user-name" 
+id="user-name">
 <svg class="modal-icon-input" width="18" height="24">
     <use href="./images/iconshw5.svg#icon-person"></use>
 </svg>
 </div>
-        </div>
-        <div class="modal-field">
+</div>
+        <div class="modal-box">
             <label class="modal-label" for="user-tel">Phone</label>
-            <div class="input-wrap">
-                <input class="modal-input" type="tel" name="user-tel" minlength="7" id="user-tel">
+            <div class="wrapper-icon">
+                <input 
+                class="modal-input" 
+                type="tel" 
+                name="user-tel" 
+                id="user-tel">
+          
                 <svg class="modal-icon-input" width="18" height="24">
                     <use href="./images/iconshw5.svg#icon-phone"></use>
                 </svg>
             </div>
         </div>
+        <div class="modal-box">
+            <label class="modal-label" for="user-email">E-mail</label>
+            <div class="wrapper-icon">
+                <input 
+                class="modal-input" 
+                type="email"
+                name="user-email"
+               id="user-email">
+                <svg class="modal-icon-input" width="18" height="24">
+                    <use href="./images/iconshw5.svg#icon-email"></use>
+</svg>
+            </div>
+        </div>
         <div class="modal-comment">
             <label class="modal-label" for="user-comment">Comment</label>
-            <textarea class="modal-textarea" name="user-comment" id="user-comment"  placeholder="Text input"></textarea>
+            <textarea 
+            class="modal-textarea" 
+            name="user-comment" 
+            id="user-comment"  
+            placeholder="Text input">
+        </textarea>
         </div>
         <div class="modal-checkbox">
-            <input class="input-checkbox visually-hidden" type="checkbox" value="true" name="user-privacy"  id="user-privacy" />
+            <input 
+            class="input-checkbox visually-hidden" 
+            type="checkbox" 
+            value="true" 
+            name="user-privacy"  
+            id="user-privacy" />
             <label class="modal-label" for="user-privacy" >
-            <span class="privacy-text-checkbox">
+            <span class="castom-chekbox">
             <svg class="modal-checkbox-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-arrow"></use>
             </svg>
         </span>
-        I accept the terms and conditions of the <a href="" class="modal-privacy-link">Privacy Policy</a>
+        I accept the terms and conditions of the 
+        <a href="#" class="modal-privacy-link">Privacy Policy</a>
         </label>
         </div>
         <button class="button-send-modal" type="submit" >Send</button>
