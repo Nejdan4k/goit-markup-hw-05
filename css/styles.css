@@ -476,6 +476,67 @@ margin-bottom: 16px;
         fill: var(--color3, #f4f4fd);
       }
 
+      /* Subscribe */
+
+      .subscribe-footer{
+        margin-left: 80px;
+      }
+      .footer-form{
+        display: flex;
+        gap: 24px;
+      }
+      .subscribe-area-footer{
+        border: 1px solid #fff;
+        border-radius: 4px;
+        width: 264px;
+        height: 40px;
+        background-color: transparent;
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        color: var(--white);
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        padding-left: 16px;
+        outline: transparent;
+      }
+      .ubscribe-area-footer::placeholder{
+        color: #fff;
+      }
+      .subscribe-title-footer{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        margin-bottom: 16px;
+        color: #fff;
+      }
+      .footer-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #fff;
+        border-radius: 4px;
+        padding: 8px 24px;
+        min-width: 165px;
+        height: 40px;
+        background-color: #4d5ae5;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .subscribe-footer-icon-btn{
+        fill: var(--white);
+        margin-left: 16px;
+      }
+      .footer-btn:hover,
+.footer-btn:focus{
+  background-color: #404bbf;
+
+}
+
       /* Modal */
       .backdrop {
         position: fixed;
@@ -484,6 +545,9 @@ margin-bottom: 16px;
       
         width: 100%;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       
         background-color: rgba(46, 47, 66, 0.4);
       
@@ -500,7 +564,37 @@ margin-bottom: 16px;
         visibility: visible;
         pointer-events: auto;
       }
-      
+      .modal-close-btn{
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0;
+        background-color: #e7e9fc;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      }
+      .modal-close-btn:hover,
+      .modal-close-btn:focus{
+        background-color:#404bbf;
+        border: none;
+      }
+      .icon-close{
+        fill: #2e2f42;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .modal-close-btn:hover .icon-close,
+      .modal-close-btn:focus .icon-close{
+        fill: #fff;
+      }
       .modal {
         position: absolute;
         top: 50%;
@@ -509,6 +603,11 @@ margin-bottom: 16px;
         width: 408px;
         min-height: 584px;
         border-radius: 4px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 72px 24px 24px 24px;
       
         transform: translate(-50%, -50%);
       
@@ -522,3 +621,52 @@ margin-bottom: 16px;
       .backdrop:not(.is-open) .modal {
         transform: translate(-50%, -100%);
       }
+      .modal-title{
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+        margin-bottom: 16px;
+      }
+      .fopm-input{
+        outline: transparent;
+    background-color: transparent;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    padding-left: 38px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .form-input:hover,
+      .form-input:focus-within{
+border-color: #4d5ae5;
+}
+.form-field {
+  margin-bottom: 8px;}
+
+.input-wrapper:hover .form-icon,
+.input-wrapper:focus-within .form-icon{
+  fill: #4d5ae5;
+}
+.input-wrapper{
+position: relative;
+}
+
+.form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color:  #8e8f99;
+  display: block;
+  margin-bottom: 4px;
+}
+.form-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
